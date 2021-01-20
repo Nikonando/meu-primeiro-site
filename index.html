@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <title>Ola, me chamo Fernando Lima</title>
+    <link rel="stylesheet" href="estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  </head>
+
+  
+  <body>
+    <div class="caixa1Alvorecer" id="sobre">
+      <div class="logo">
+        <img src="unnamed.png" width="80px" hight="80px">
+      </div>
+      <div class="menu">
+        <a href="#sobre" class="linkmenu">Sobre mim</a>
+        <a href="#habilidades" class="linkmenu">Minhas Habilidades</a>
+        <a href="#contato" class="linkmenu">Fale Comigo!</a>
+      </div>
+      <h1>Fernando Lima</h1>
+      <p>
+
+        ESTA É UMA PÁGINA DE TESTES E ESTUDOS<br>
+        Eu sou um futuro desenvolvedor full-stack começando minha carreira e apaixonado <br> por aprender coisas novas. Além disso, sou uma pessoa fácil de lidar e me <br> encaixo bem em qualquer time. Estou buscando uma boa empresa para <br> trabalhar e gerar um impacto positivo no mundo através da tecnologia :)
+      </p>
+
+      <img src="fgl1.jpg" class="photo" onclick="mudarTema()">
+
+
+    </div>
+
+
+    <div class="caixa2" id="habilidades">
+
+      <h2 class="titulohabilidades">Minhas habilidades</h2>
+
+      <div class="container">
+        <div class="habilidade">
+
+          <img src="frontend.png">
+          <h3>Front-end</h3>
+          <p>Eu programo sites do zero, e levo ideias do papel para o navegador, me preocupando com a entrega final.</p>
+          <h4>Linguagens:</h4>
+          <p>HTML, CSS, JavaScript</p>
+          <h4>Ferramentas:</h4>
+          <p>React</p>
+          <p>Redux</p>
+          <p>SASS</p>
+        </div>
+
+        <div class="habilidade">
+          <img src="backend.png">
+          <h3>Back-end</h3>
+          <p>Desenvolvo sistemas para dar suporte aos produtos web, crio APIs e tenho boa experiência com banco de dados.</p>
+          <h4>Linguagens:</h4>
+          <p>Node.js, REST, SQL</p>
+          <h4>Ferramentas:</h4>
+          <p>Express</p>
+          <p>Postgres</p>
+          <p>Sequelize</p>
+        </div>
+        
+      </div>
+
+    </div>
+    <div class="caixa3" id="contato">
+      <h2 class="titulocontato">Me manda uma mensagem :)</h2>
+      <button class="linkwhatsapp">Mandar um WhatsApp</button>
+      <p class="outroscontatos">Ou então fale comigo pelo <a href="https://www.linkedin.com/in/fernando-gon%C3%A7alves-lima-2044007a/"><img src="linkedIn_PNG38.png" width="32px" height="32px"></a>  ou  <a href="https://github.com/Nikonando"> <img src="kisspng-github-computer-icons-computer-software-github-5ac01a36197813.4123370315225390621043.png" width="30px" height="30px"></a></p>
+    </div>
+
+  <script>
+
+    function mudarTema(){
+      var caixa1Element = document.getElementById('sobre');
+
+      if(caixa1Element.className === "caixa1Alvorecer"){
+        caixa1Element.className = "caixa1Anoitecer";
+      }
+      else{
+        caixa1Element.className = "caixa1Alvorecer";
+      }
+    }
+    
+   </script>
+
+
+  </body>
+
+
+</html>
